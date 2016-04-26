@@ -10,7 +10,7 @@ var bot = new Bot({
 bot.start();
  
 bot.get(/Hi|Hey|Hello|Yo/, function(message) {
-  var answer = new Message().text('Hello, Sir').to(message.chat.id);
+  var answer = new Message().text(message.text).to(message.chat.id);
  
   bot.send(answer);
 });
