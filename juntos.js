@@ -20,14 +20,7 @@ botS.on('start', function() {
         icon_emoji: ':cat:'
     };
     
-    // define channel, where bot exist. You can adjust it there https://my.slack.com/services  
-    botS.postMessageToChannel('general', 'meow!', params);
-    
-    // define existing username instead of 'user_name' 
-    botS.postMessageToUser('user_name', 'meow!', params); 
-    
-    // define private group instead of 'private_group', where bot exist 
-    botS.postMessageToGroup('private_group', 'meow!', params); 
+    // define channel, where bot exist. You can adjust it there 
 });
 botT.get(/.+/, function(message) {
    botS.postMessageToChannel('general', message.text);
