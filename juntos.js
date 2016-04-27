@@ -2,14 +2,14 @@ var Bot = require('telegram-api').default;
 var Message = require('telegram-api/types/Message');
 var File = require('telegram-api/types/File');
 var botT = new Bot({
-  token: '142957235:AAGgvOES4UBCEUcmSHt8M0AVyxiUapCL0xQ'
+  token: 'XX'
 });
 
 var SlackBot = require('slackbots');
  
 // create a bot 
 var botS = new SlackBot({
-    token: 'xoxb-38251745335-CAgpSSQdcPWE7ufD1NvVHT49', // Add a bot https://my.slack.com/services/new/bot and put the token  
+    token: 'XX', // Add a bot https://my.slack.com/services/new/bot and put the token  
     name: 'My Bot'
 });
 botT.start(
