@@ -22,6 +22,10 @@ botS.on('start', function() {
     
     // define channel, where bot exist. You can adjust it there 
 });
+botT.on(message,function(msg) {
+    botS.postMessageToChannel('tests','['+message.from.first_name+' ' +message.from.last_name+'] '+ message.text);
+});
+
 botT.get(/.+/,function(message) {
   
     botS.postMessageToChannel('tests','['+message.from.first_name+' ' +message.from.last_name+'] '+ message.text);
