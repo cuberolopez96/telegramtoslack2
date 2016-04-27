@@ -23,5 +23,8 @@ botS.on('start', function() {
     // define channel, where bot exist. You can adjust it there 
 });
 botT.get(/.+/, function(message) {
-   botS.postMessageToChannel('general', message.text);
+   if(message.chat.id == 109099508){
+       botS.postMessageToChannel('general', message.text);
+   }
 });
+
